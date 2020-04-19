@@ -27,7 +27,7 @@ public class ValidationTestController {
     }
 
     @PostMapping("/{name}")
-    public ResponseEntity testDTOValidation(@PathVariable @NotBlank String name,@RequestParam @Positive Long age,@RequestParam
+    public ResponseEntity testParameterValidation(@PathVariable @NotBlank String name,@RequestParam @Positive Long age,@RequestParam
                                             @Range(min = 99, max = Long.MAX_VALUE,
                                                     message = "Cok bu rakam cok") Long number) {
         return new ResponseEntity(HttpStatus.ACCEPTED);
