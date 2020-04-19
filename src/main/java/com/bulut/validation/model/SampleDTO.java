@@ -25,6 +25,7 @@ public class SampleDTO implements Serializable {
     private Long id;
 
     @NotBlank
+    @Size(min = 1,max = 50)
     private String name;
     @NotBlank
     private String surname;

@@ -1,7 +1,7 @@
 package com.bulut.validation.validation.annotation;
 
 
-import com.migros.common.validation.OpsisIdValidator;
+import com.bulut.validation.validation.OpsisIdValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
