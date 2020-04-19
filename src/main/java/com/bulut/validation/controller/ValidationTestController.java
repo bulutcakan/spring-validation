@@ -67,11 +67,5 @@ public class ValidationTestController {
     }
 
 
-    @ExceptionHandler
-    public void handle(ConstraintViolationException constraintViolationException, HttpServletResponse response) {
-        response.setStatus(HttpStatus.BAD_REQUEST.value());
-    }
-
-
 }
 
